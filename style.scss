@@ -1,6 +1,5 @@
-$azul : #01BFE3;
-$marino : #001E65;
-
+$azul: #01bfe3;
+$marino: #001e65;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -29,15 +28,40 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-
 }
-
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+  width: 100%;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-
-
+#tar {
+  height: 100vh;
+  height: 100dvh;
+  border: solid;
+  display: flex;
+  flex-wrap: wrap;
+  .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 100%;
+  }
+  .b {
+    a{
+      color: white;
+    }
+    flex: 1 0 100%;
+    text-align: center;
+    background: url("/ima/bg.svg") no-repeat;
+    background-size: 100%;
+    background-position: top center;
+  }
+}
