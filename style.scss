@@ -35,7 +35,7 @@ main {
   align-items: center;
   height: 100vh;
   height: 100dvh;
-  width: 100%;
+  // width: 100%;
 }
 h1 {
   font-size: 3.2em;
@@ -45,16 +45,32 @@ h1 {
 #tar {
   height: 100vh;
   height: 100dvh;
-  border: solid;
   display: flex;
   flex-wrap: wrap;
+  ul{
+    padding: 0;
+    li{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a{
+        font-size: clamp(1.5rem, 2vw, 3.5rem);
+        font-weight: bold;
+        margin-left: .7rem;
+      }
+    }
+  }
   .a{
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1 0 100%;
+    img{
+      // width: 20px;
+    }
   }
   .b {
+    padding-top: 15%;
     a{
       color: white;
     }
